@@ -90,6 +90,7 @@ def compute_ordered_pairs(scores):
 
 def fit():
     for k in tqdm(range(epochs)):
+        # query by query
         scores = []
         true_scores = []
         for datum in data_train:
